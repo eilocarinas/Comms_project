@@ -6,7 +6,7 @@ for i in range(len(lupang_hinirang)):
     if lupang_hinirang[i] == "st":
         time.sleep(.01)
     else:
-        play(song1[i])
+        play(lupang_hinirang[i])
     
     
 
