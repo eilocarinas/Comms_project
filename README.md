@@ -1,7 +1,9 @@
 # Comms_project
 
 
-compile play.py
+compile play.py||
 
-tracks.py contains tracks, series of notes
+tracks.py contains tracks, series of notes||
+
+
 notes.py, create notes
