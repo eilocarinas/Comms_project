@@ -18,13 +18,7 @@ def mixtracks (track_1, track_2):
         song = note1[:len(note1)].overlay(note2[:len(note2)])
         
     return song
-track1 = lupang_hinirang
-track2 = lupang_hinirang_side
-song1 = []
-while True:
-    try:
-        song1.append(track1.pop(0))
-        song1.append(track2.pop(0))
-    except IndexError:
-        break
+mixtracks ()
+
+#ememe
 
