@@ -1,8 +1,12 @@
 from notes import *
 
 
-lupang_hinirang = [G4, Gb4, A4, G4, D4, A4, B4, C5, B4, A4, B4, G4]
-lupang_hinirang_filler = [G4_long, Gb4_long, A4_long, G4_long, D4_long, A4_long, B4_long, C5_long, B4_long, A4_long, B4_long, G4_long]
+lupang_hinirang = [G1, Gb1, A1, G1, D1, A1, B1, C2, B1, A1, B1, G1,
+                   G1, Gb1, A1,  G1, D1, A1, B1, C2, B1, A1, G1]
+lupang_hinirang_filler = [G1_long, Gb1_long, A1_long, G1_long, D1_long, A1_long, B1_long, C2_long, B1_long, A1_long, B1_long, G1_long,
+                          G1_long, Gb1_long, A1_long,  G1_long, D1_long, A1_long, B1_long, C2_long, B1_long, A1_long, G1_long]
+
+# Song 1: Jingle Bells
 
 # Envelopes
 # .fade_in and .fade_out serve as crossfaders for DJs in combining multiple audio signals
@@ -26,7 +30,7 @@ def mix2tracks(track1, track2):
     createSpace(track2, attack=50, release=50)
     song = AudioSegment.empty()
     for i in range(len(track1)):
-        note1 = lupang_hinirang[i]
+        note1 = track1[i]
         note2 = track2[i]
         song += note1[:len(note1)].overlay(note2[:len(note2)])
     return song
