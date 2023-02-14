@@ -11,7 +11,7 @@ part1= [G1, Gb1_eight, A1_sixth, G1, #Ba-yang Ma-gi-
                    B1_eight, A1_sixth, B1, G1_eight, rest_eight, #si-la-nga-nan
                    G1, Gb1_eight, A1_sixth,  G1,  #a-lab-ng-pu-
                    D1,A1_eight, B1_eight, C2_eight, #-so-sa-dib-dib-
-                   B1_eight, A1_sixth, G1, rest] #-mo'y bu -hay
+                   B1_eight, A1_sixth, G1, rest_eight] #-mo'y bu -hay
 
 part1_filler= [G1_long, Gb1_long, A1_long, G1_long, 
                 D1_long, A1_long, B1_long, C2_long, 
