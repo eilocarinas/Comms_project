@@ -10,9 +10,13 @@ notes.py, create notes
 
 required packages:
 
-  pyaudio
+  pyaudio               pip install pyaudio
   
-  pydub
+  pydub                 pip install pydub
   
-  'thinx' for dsp
+  'thinkx' for dsp      pip install thinkx
+  
+References for frequency:
+  
+https://pages.mtu.edu/~suits/notefreqs.html?fbclid=IwAR2iOm-q3ZJtwzACwjyM-OhYCL3tGfzmVXXHQAY-ioooLerbnANTy4IGkxs
   
