@@ -19,7 +19,7 @@ noteFreqs = {
     'C7':2093,'Db7':2217.46,'D7':2349.32,'Eb7':2489.02,'E7':2637.02,'F7':2793.83,'Gb7':2959.96,\
     'G7':3135.96,'Ab7':3322.44,'A7':3520,'Bb7':3729.31,'B7':3951.07,'C8':4186.01,'Db':4434.92,\
     'D8':4698.63,'Eb8':4978.03,'E8':5274.04,'F8':5587.65,'Gb8':5919.91,'G8':6271.93,'Ab8':6644.88,\
-    'A8':7040,'Bb8':7458.62,'B8':7902.13
+    'A8':7040,'Bb8':7458.62,'B8':7902.13, 'rest':0
 
 }
 
@@ -33,9 +33,12 @@ fourier_coeffs = {
     "random": random_coeffs 
 }
 
-bt = 1.0
-bt_long = 2.0
-vol = 0.5
+bt = 2.0 #half notes/rest
+bt_long = bt + 0.5
+bt_eight = bt/2 #eight notes/rest
+bt_sixt = bt_eight/2 #sixteent notes/ rest
+
+vol = 1.0
 sin_sig = []
 def createNote(noteName = "A4", type = "sine", amp = 0.5, beats = 1.0, filter = None, cutoff = None, filename = "default") :
     frequency  = noteFreqs[noteName]
@@ -65,6 +68,36 @@ D2 = createNote(noteName = "C2", type = "random", amp = vol, beats = bt, filter 
 
 Eb1 = createNote(noteName = "Eb1", type = "random", amp = vol, beats = bt, filter = None, cutoff = None)
 Ab1 = createNote(noteName = "Ab1", type = "random", amp = vol, beats = bt, filter = None, cutoff = None)
+rest = createNote(noteName = "rest", type = "random", amp = vol, beats = bt, filter = None, cutoff = None)
+rest_eight = createNote(noteName = "rest", type = "random", amp = vol, beats = bt_eight, filter = None, cutoff = None)
+
+A1_eight = createNote(noteName = "A1", type = "random", amp = vol, beats = bt_eight, filter = None, cutoff = None)
+C1_eight = createNote(noteName = "C1", type = "random", amp = vol, beats = bt_eight, filter = None, cutoff = None)
+E1_eight = createNote(noteName = "E1", type = "random", amp = vol, beats = bt_eight, filter = None, cutoff = None)
+F1_eight = createNote(noteName = "F1", type = "random", amp = vol, beats = bt_eight, filter = None, cutoff = None)
+G1_eight = createNote(noteName = "G1", type = "random", amp = vol, beats = bt_eight, filter = None, cutoff = None)
+D1_eight = createNote(noteName = "D1", type = "random", amp = vol, beats = bt_eight, filter = None, cutoff = None)
+Gb1_eight = createNote(noteName = "Gb1", type = "random", amp = vol, beats = bt_eight, filter = None, cutoff = None)
+B1_eight = createNote(noteName = "B1", type = "random", amp = vol, beats = bt_eight, filter = None, cutoff = None)
+C2_eight = createNote(noteName = "C2", type = "random", amp = vol, beats = bt_eight, filter = None, cutoff = None)
+D2_eight = createNote(noteName = "D2", type = "random", amp = vol, beats = bt_eight, filter = None, cutoff = None)
+G2_eight = createNote(noteName = "G2", type = "random", amp = vol, beats = bt_eight, filter = None, cutoff = None)
+G3_eight = createNote(noteName = "G3", type = "random", amp = vol, beats = bt_eight, filter = None, cutoff = None)
+Eb1_eight = createNote(noteName = "G3", type = "random", amp = vol, beats = bt_eight, filter = None, cutoff = None)
+
+A1_sixt = createNote(noteName = "A1", type = "random", amp = vol, beats = bt_sixt, filter = None, cutoff = None)
+C1_sixt = createNote(noteName = "C1", type = "random", amp = vol, beats = bt_sixt, filter = None, cutoff = None)
+E1_sixt = createNote(noteName = "E1", type = "random", amp = vol, beats = bt_sixt, filter = None, cutoff = None)
+F1_sixt = createNote(noteName = "F1", type = "random", amp = vol, beats = bt_sixt, filter = None, cutoff = None)
+G1_sixt = createNote(noteName = "G1", type = "random", amp = vol, beats = bt_sixt, filter = None, cutoff = None)
+D1_sixt = createNote(noteName = "D1", type = "random", amp = vol, beats = bt_sixt, filter = None, cutoff = None)
+Gb1_sixt = createNote(noteName = "Gb1", type = "random", amp = vol, beats = bt_sixt, filter = None, cutoff = None)
+B1_sixt = createNote(noteName = "B1", type = "random", amp = vol, beats = bt_sixt, filter = None, cutoff = None)
+C2_sixt = createNote(noteName = "C2", type = "random", amp = vol, beats = bt_sixt, filter = None, cutoff = None)
+D2_sixt = createNote(noteName = "D2", type = "random", amp = vol, beats = bt_sixt, filter = None, cutoff = None)
+G2_sixt = createNote(noteName = "G2", type = "random", amp = vol, beats = bt_sixt, filter = None, cutoff = None)
+G3_sixt = createNote(noteName = "G3", type = "random", amp = vol, beats = bt_sixt, filter = None, cutoff = None)
+Eb1_sixt = createNote(noteName = "G3", type = "random", amp = vol, beats = bt_sixt, filter = None, cutoff = None)
 
 
 A1_long = createNote(noteName = "A1", type = "random", amp = vol, beats = bt_long, filter = None, cutoff = None)

@@ -1,19 +1,21 @@
 from notes import *
 
 
-lupang_hinirang = [G1, Gb1, A1, G1, D1, A1, B1, C2, B1, A1, B1, G1,
-                   G1, Gb1, A1,  G1, D1, A1, B1, C2, B1, A1, G1]
-lupang_hinirang_filler = [G1_long, Gb1_long, A1_long, G1_long, D1_long, A1_long, B1_long, C2_long, B1_long, A1_long, B1_long, G1_long,
-                          G1_long, Gb1_long, A1_long,  G1_long, D1_long, A1_long, B1_long, C2_long, B1_long, A1_long, G1_long]
+lupang_hinirang = [G1, Gb1_eight, A1_sixt, G1, #Ba-yang Ma-gi-
+                   D1, A1_eight, B1_eight, C2_eight,  #-liw per-las ng
+                   B1_eight, A1_sixt, B1, G1_eight, rest_eight, #si-la-nga-nan
+                   G1, Gb1_eight, A1_sixt,  G1,  #a-lab-ng-pu-
+                   D1,A1_eight, B1_eight, C2_eight, #-so-sa-dib-dib-
+                   B1_eight, A1_sixt, G1, rest] #-mo'y bu -hay
+                    
+lupang_hinirang_filler= [G1_long, Gb1_long, A1_long, G1_long, 
+                          D1_long, A1_long, B1_long, C2_long, 
+                          B1_long, A1_long, B1_long, G1_long, rest_eight,
+                          G1_long, Gb1_long, A1_long,  G1_long, 
+                          D1_long, A1_long, B1_long, C2_long, 
+                          B1_long, A1_long, G1_long, rest]
 
-# Song 1: Jingle Bells
 
-# Envelopes
-# .fade_in and .fade_out serve as crossfaders for DJs in combining multiple audio signals
-# But in this case, I convert each note into its own signal
-# So .fade_in serves as the "Attack" time on the ADSR envelope
-# And .fade_out serves as the "Release" time on the ADSR envelope
-# Creates spacing between consecutive notes that are the same by adding attack and release
 
 def createSpace(track, attack=100, release=100):
     for i in range(0, len(track) - 1):
