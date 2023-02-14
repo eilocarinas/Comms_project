@@ -4,7 +4,6 @@ from notes import *
 
 #filter
 
-
 play(song1)
     
 
