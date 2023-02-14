@@ -8,8 +8,11 @@ tracks.py contains tracks, series of notes
 
 notes.py, create notes
 
-packages to install
+required packages:
+
   pyaudio
+  
   pydub
+  
   'thinx' for dsp
   
