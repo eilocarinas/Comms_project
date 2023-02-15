@@ -44,7 +44,7 @@ sin_sig = []
 def createNote(noteName = "A4", type = "sine", amp = 0.5, beats = 1.0, filter = None, cutoff = None, filename = "default") :
     frequency  = noteFreqs[noteName]
     duration = beats/2
-
+    signal = thinkdsp.SinSignal(freq=0)
     for i in range (0,8):
         
         sin_sig = thinkdsp.SinSignal(freq=frequency*i, amp=amp*fourier_coeffs[type][i], offset=0) 
