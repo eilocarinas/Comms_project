@@ -27,24 +27,36 @@ part1_filler= [G1_long, Gb1_long, A1_long, G1_long,
                 B1_long, A1_long, G1_long, rest_eight]
 
 
-part2 = [G1_eight, Gb1_sixth, G1_eight, A1_eight, A1_sixth, D1_eight, D1_sixth, A1_eight, A1_sixth, D1_eight, D1_sixth,
-          B1_eight, C2_sixth, D2_eight, E2_sixth, D2,
-            G1_eight, Gb1_sixth, G1_eight, A1_eight, A1_sixth, D1_eight, D1_sixth, A1_eight, A1_sixth, D1_eight, D1_sixth,
-          B1_sixth, C2_sixth, B1_sixth, A1_sixth, B1_sixth, A1_sixth, G1] #hal
+part2 = [G1_eight, Gb1_sixth, G1_eight, A1_eight, 
+         A1_sixth, D1_eight, D1_sixth, A1_eight, 
+         A1_sixth, D1_eight, D1_sixth,
+         B1_eight, C2_sixth, D2_eight, E2_sixth, D2,
+         G1_eight, Gb1_sixth, G1_eight, A1_eight, A1_sixth, D1_eight, D1_sixth, A1_eight, A1_sixth, D1_eight, D1_sixth,
+         B1_sixth, C2_sixth, B1_sixth, A1_sixth, B1_sixth, A1_sixth, G1] 
 
-part2_filler = [G1_eight, Gb1_sixth, G1_eight, A1_eight, A1_sixth, D1_eight, D1_sixth, A1_eight, A1_sixth, D1_eight, D1_sixth,
-          B1_eight, C2_sixth, D2_eight, E2_sixth, D2,
-            G1_eight, Gb1_sixth, G1_eight, A1_eight, A1_sixth, D1_eight, D1_sixth, A1_eight, A1_sixth, D1_eight, D1_sixth,
-          B1_sixth, C2_sixth, B1_sixth, A1_sixth, B1_sixth, A1_sixth, G1] #hal
+part2_filler = [G1_long, Gb1_long, G1_eight, A1_long, A1_long, D1_long, D1_long, A1_long, A1_long, D1_long, D1_long,
+                B1_long, C2_long, D2_long, E2_long, D2_long,
+                G1_long, Gb1_long, G1_long, A1_long, A1_long, D1_long, D1_long, A1_long, A1_long, D1_long, D1_long,
+                B1_long, C2_long, B1_long, A1_long, B1_long, A1_long, G1_long] 
 
-part3 = [G1_eight, E1_sixth, G1_eight, C2,
+part3 = [G1_eight, E1_sixth, G1_eight, C2, C2,    #Lu-pa ng a-raw
+             D3, D3, E1_eight, D2_sixth, C2_eight, D2_sixth, E1,    #ng luwal-ha-ti't pag-sin-ta
+             G1_eight, E1_eight, D2_eight, E1, C2, D2, B1_eight, B1_eight, C2, rest    #Bu-hay ay la-ngit sa pi-ling mo
+             ]
+
+part3_filler = [G1_long, E1_long, G1_long, C2_long, C2_long, #Lu-pa ng a-raw
+                    D2_long, D2_long, E1_long, D2_long, C2_long, D2_long, E1_long, #ng luwal-ha-ti't pag-sin-ta
+                    F1_long, E1_long, D2_long, E1_long, C2_long, D2_long, B1_long, B1_long, C2_long, rest #Bu-hay ay la-ngit sa pi-ling mo
+                    ]
+
+part4 = [G1_eight, E1_sixth, G1_eight, C2,
           C2, D2, D2, E1_eight, 
           D2_sixth, C2_eight, D2_sixth, E1, 
           Gb1_eight, E1_eight, D2_eight, E1, 
           C2, D2, B1_eight, B1_sixth, C2, rest
           ] 
 
-part3_filler = [G1_long, E1_long, G1_long, C2_long, 
+part4_filler = [G1_long, E1_long, G1_long, C2_long, 
                     C2_long, D2_long, D2_long, E1_long, 
                     D2_long, C2_long, D2_long, E1_long,
           	        Gb1_long, E1_long, D2_long, E1_long, 
@@ -75,3 +87,4 @@ def mix2tracks(track1, track2):
 part1 = mix2tracks(track1=part1, track2=part1_filler)
 part2 = mix2tracks(track1=part2, track2=part2_filler)
 part3 = mix2tracks(track1=part3, track2=part3_filler)
+part4 = mix2tracks(track1=part4, track2=part4_filler)
