@@ -10,10 +10,10 @@ from tracks import *
 
 print("Playing: Lupang Hinirang")
 play(part1) #I and II
-#play(part2) #III
-#play(part2) #III
-#play(part3) #IV
-#play(part4) #IV
+play(part2) #III
+play(part2) #III
+play(part3) #IV
+play(part4) #IV
 
 
 
