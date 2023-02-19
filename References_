@@ -293,4 +293,4 @@ song = song1 + song2 + song3 + song4 + song4_low + song4_high
 # play(song)
 
 # Combine all 4 songs and export to an mp3 file!
-# song.export("Lucas-Pao-Gened-1080-Electronics-Project-Composition.mp3")
+song.export("Lucas-Pao-Gened-1080-Electronics-Project-Composition.mp3")
