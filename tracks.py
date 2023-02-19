@@ -13,18 +13,6 @@ part1= [G4, Gb4_eight, A4_eight, G4, #Ba-yang Ma-gi-
                    G4, Gb4_eight, A4_eight,  G4,  #a-lab-ng-pu-
                    D4,A4_eight, B4_eight, C5_eight, #-so-sa-dib-dib-
                    B4_eight, A4_eight, G4, rest_eight] #-mo'y bu -hay
-part1_message = "100101101001010101011001011001011010010101"
-
-for i in range(0, len(part1_message)):
-   
-   bit = int(part1_message[i])
-   
-   if bit == 1:
-       bt = bt
-   else:
-       bt = bt/2 
-
-
 
 part1_filler= [G3, Gb3_eight, A3_sixth, G3, #Ba-yang Ma-gi-
                    D3, A3_eight, B3_eight, C4_eight,  #-liw per-las ng
