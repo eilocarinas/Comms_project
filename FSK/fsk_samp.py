@@ -40,21 +40,89 @@ fourier_coeffs = {
 }
 # 00-sixteenth  01- eighth  10-quarter 11-half
 
-part1_message = "100101101001010101011001011001011010010101"
-part1_message_long = "1111111111111111111111111111111111111111"
+part1_message = "10010110100101010101100101100101101001010101001001"
+part1_message_long = "11111111111111111111111111111111111111111111111111"
+part2_message = "10011010011001100110011001100111100110100110011001100110011001100111"
+part2_message_long = "11111111111111111111111111111111111111111111111111111111111111111111"
+part3_message = "01010110101010010101011001010110101001011010"
+part3_message_long = "11111111111111111111111111111111111111111111"
 
-part1_note = ["G4", "Gb4", "A4", 'G4', #Ba-yang Ma-gi-
-                   'D4', 'A4', 'B4', 'C5',  #-liw per-las ng
-                   'B4', 'A4', 'B4', 'G4', 'rest', #si-la-nga-nan
-                   'G4', 'Gb4', 'A4',  'G4',  #a-lab-ng-pu-
-                   'D4','A4', 'B4', 'C5' ] #-so-sa-dib-dib
-part1_note_f = ["G4", "Gb4", "A4", 'G4', #Ba-yang Ma-gi-
-                   'D4', 'A4', 'B4', 'C5',  #-liw per-las ng
-                   'B4', 'A4', 'B4', 'G4', 'rest', #si-la-nga-nan
-                   'G4', 'Gb4', 'A4',  'G4',  #a-lab-ng-pu-
-                   'D4','A4', 'B4', 'C5' ] #-so-sa-dib-dib
+part1_note = ['G4', 'Gb4', 'A4', 'G4',   # Ba-yang Ma-gi-
+                'D4', 'A4', 'B4', 'C5',    # -liw per-las ng
+                'B4', 'A4', 'B4', 'G4', 'rest',  # si-la-nga-nan
+                'G4', 'Gb4', 'A4', 'G4',   # a-lab-ng-pu-
+                'D4', 'A4', 'B4', 'C5',    # so sa dib-dib
+                'B4', 'A4', 'G4', 'rest'    # mo'y bu-hay
+                ]
+
+part1_note_f = ['G4', 'Gb4', 'A4', 'G4',   # Ba-yang Ma-gi-
+                'D4', 'A4', 'B4', 'C5',    # -liw per-las ng
+                'B4', 'A4', 'B4', 'G4', 'rest',  # si-la-nga-nan
+                'G4', 'Gb4', 'A4', 'G4',   # a-lab-ng-pu-
+                'D4', 'A4', 'B4', 'C5',    # so sa dib-dib
+                'B4', 'A4', 'G4', 'rest'    # mo'y bu-hay
+                ]
+
+part1_note = [ 'G4', 'Gb4', 'A4', 'G4',   # Lu-pang hi-ni
+               'D4', 'A4', 'B4', 'C5',    # rang du-yan ka
+               'B4', 'A4', 'B4', 'G4', 'rest',  # ng ma-gi-ting
+               'G4', 'Gb4', 'A4', 'G4',   # sa man-lu-lu
+               'D4', 'A4', 'B4', 'C5',     # pig 'di ka pa-
+               'B4', 'A4', 'G4', 'rest'   # si-si-il
+              ]
+
+part1_note_f = [ 'G4', 'Gb4', 'A4', 'G4',   # Lu-pang hi-ni
+                 'D4', 'A4', 'B4', 'C5',    # rang du-yan ka
+                 'B4', 'A4', 'B4', 'G4', 'rest',  # ng ma-gi-ting
+                 'G4', 'Gb4', 'A4', 'G4',   # sa man-lu-lu
+                 'D4', 'A4', 'B4', 'C5',    # pig 'di ka pa-
+                 'B4', 'A4', 'G4', 'rest'   # si-si-il
+                ]
 
 
+part2_note = [ 'G4','Gb4', 'G4','A4','A4','D4','D4',  # Ang kis-lap ng wa-ta-wat
+                'A4','A4','D4','D4',                  # mo'y ta-gum-pay
+                'B4', 'C5', 'D5', 'E5','D5',          # na nag-ni-ning-ning
+                'G4','Gb4', 'G4','A4','A4','D4','D4', # Ang bi-tu-in at a-raw
+                'A4','A4','D4','D4',                  # niya ka-i-lan
+                'B4','C5','B4','A4','B4','A4','G4'    # pa ma'y 'di mag-di-di-lim
+               ]
+
+part2_note_f = [ 'G4','Gb4', 'G4','A4','A4','D4','D4',  # Ang kis-lap ng wa-ta-wat
+                'A4','A4','D4','D4',                  # mo'y ta-gum-pay
+                'B4', 'C5', 'D5', 'E5','D5',          # na nag-ni-ning-ning
+                'G4','Gb4', 'G4','A4','A4','D4','D4', # Ang bi-tu-in at a-raw
+                'A4','A4','D4','D4',                  # niya ka-i-lan
+                'B4','C5','B4','A4','B4','A4','G4'    # pa ma'y 'di mag-di-di-lim
+               ]
+
+part3_note = ['G4', 'E4', 'G4', 'C4',         # Lu-pa ng a-
+              'C4', 'D4', 'D4', 'E4',         # raw ng luwal-ha-
+              'D4', 'C4', 'D4', 'E4',         # ti't pag-si-nta
+              'Gb4', 'E4', 'D4', 'E4',        # Bu-hay ay la
+              'C4', 'D4', 'B4', 'B4', 'C4', 'rest'  # ngit sa pi-ling mo
+              ]
+
+part3_note_f = ['G4', 'E4', 'G4', 'C4',         # Lu-pa ng a-
+              'C4', 'D4', 'D4', 'E4',         # raw ng luwal-ha-
+              'D4', 'C4', 'D4', 'E4',         # ti't pag-si-nta
+              'Gb4', 'E4', 'D4', 'E4',        # Bu-hay ay la
+              'C4', 'D4', 'B4', 'B4', 'C4', 'rest'  # ngit sa pi-ling mo
+              ]
+
+part3_note = ['G4', 'E4', 'G4', 'C4',         # A-ming li-ga
+              'C4', 'D4', 'D4', 'E4',         # ya na 'pag may
+              'D4', 'C4', 'D4', 'E4',         # mang-a-a-pi
+              'Gb4', 'E4', 'D4', 'E4',        # Ang ma-ma-tay
+              'C4', 'D4', 'B4', 'B4', 'C4', 'rest'  # nang da-hil sa-'yo
+              ]
+
+part3_note_f = ['G4', 'E4', 'G4', 'C4',         # A-ming li-ga
+              'C4', 'D4', 'D4', 'E4',         # ya na 'pag may
+              'D4', 'C4', 'D4', 'E4',         # mang-a-a-pi
+              'Gb4', 'E4', 'D4', 'E4',        # Ang ma-ma-tay
+              'C4', 'D4', 'B4', 'B4', 'C4', 'rest'  # nang da-hil sa-'yo
+              ]
 
 def createnote(noteName="A4", type="random", amp=0.5, beats=1.0, filter=None, cutoff=None, filename="defaultFileName"):
     
@@ -87,17 +155,18 @@ def createSpace(track, attack=100, release=100):
 
 # grouping the message into two bits
 def groupBits(message):
-    for i in range(0, len(part1_message)-1, 2):
-        bit = part1_message[i:i+2]
+    two_bit.clear()
+    for i in range(0, len(message)-1, 2):
+        bit = message[i:i+2]
         two_bit.append(bit)
         print(bit)
     
     
 
 # creating an array of audio segments      
-def createseg(track, seg_track, digital_input):
+def createseg(track_l, seg_track, digital_input):
     groupBits(digital_input)
-    for x in range(0, len(track)):
+    for x in range(0, len(track_l)):
         print(len(two_bit))
         
         if two_bit[x] == '10':
@@ -108,36 +177,36 @@ def createseg(track, seg_track, digital_input):
             beats = bt*2
         else:
             beats = bt/4
-    
-        print(two_bit)
-        seg_track.append(createnote(track[x], beats=beats))
-        print(track[x])
-    print(two_bit)
-    two_bit.clear()
-    print(two_bit)
+        seg_track.append(createnote(track_l[x], beats=beats))
+        print(track_l[x])
+ 
 
 # mixing two tracks
 def mix2tracks(track1, track2, message1, message2):
-    
+    seg_track1.clear()
+    seg_track2.clear()
     createseg(track1, seg_track1, message1)
     createseg(track2, seg_track2, message2)
     
-    createSpace(track1, attack=50, release=50)
-    createSpace(track2, attack=50, release=50)
+    createSpace(seg_track1, attack=50, release=50)
+    createSpace(seg_track2, attack=50, release=50)
     song = AudioSegment.empty()
     
 
-    for i in range(len(seg_track1)):
+    for i in range(len(track1)):
         note1 = seg_track1[i]
         note2 = seg_track2[i]
         song += note1[:len(note1)].overlay(note2[:len(note2)])
-    seg_track1.clear()
-    seg_track2.clear()
+
     return song
     
 
 part1 = mix2tracks(track1 = part1_note, track2 = part1_note_f, message1 = part1_message, message2= part1_message_long)
+part2 = mix2tracks(track1 = part2_note, track2 = part2_note_f, message1 = part2_message, message2= part2_message_long)
+part3 = mix2tracks(track1 = part3_note, track2 = part3_note_f, message1 = part3_message, message2= part3_message_long)
 play(part1)
-
-
-
+play(part1)
+play(part2)
+play(part2)
+play(part3)
+play(part3)
