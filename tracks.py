@@ -1,31 +1,43 @@
 from notes import *
 
-
-part1= [G4, Gb4_eight, A4_sixth, G4, #Ba-yang Ma-gi-
+# quarter note represents 1 and eight note represents 0
+part1= [G4, Gb4_eight, A4_eight, G4, #Ba-yang Ma-gi-
                    D4, A4_eight, B4_eight, C5_eight,  #-liw per-las ng
-                   B4_eight, A4_sixth, B4, G4_eight, rest_eight, #si-la-nga-nan
-                   G4, Gb4_eight, A4_sixth,  G4,  #a-lab-ng-pu-
+                   B4_eight, A4_eight, B4, G4_eight, rest_eight, #si-la-nga-nan
+                   G4, Gb4_eight, A4_eight,  G4,  #a-lab-ng-pu-
                    D4,A4_eight, B4_eight, C5_eight, #-so-sa-dib-dib-
-                   B4_eight, A4_sixth, G4, rest,
-                   G4, Gb4_eight, A4_sixth, G4, #Ba-yang Ma-gi-
+                   B4_eight, A4_eight, G4, rest,
+                   G4, Gb4_eight, A4_eight, G4, #Ba-yang Ma-gi-
                    D4, A4_eight, B4_eight, C5_eight,  #-liw per-las ng
-                   B4_eight, A4_sixth, B4, G4_eight, rest_eight, #si-la-nga-nan
-                   G4, Gb4_eight, A4_sixth,  G4,  #a-lab-ng-pu-
+                   B4_eight, A4_eight, B4, G4_eight, rest_eight, #si-la-nga-nan
+                   G4, Gb4_eight, A4_eight,  G4,  #a-lab-ng-pu-
                    D4,A4_eight, B4_eight, C5_eight, #-so-sa-dib-dib-
-                   B4_eight, A4_sixth, G4, rest_eight] #-mo'y bu -hay
+                   B4_eight, A4_eight, G4, rest_eight] #-mo'y bu -hay
+part1_message = "100101101001010101011001011001011010010101"
 
-part1_filler= [G4_long, Gb4_long, A4_long, G4_long, 
-                D4_long, A4_long, B4_long, C5_long, 
-                B4_long, A4_long, B4_long, G4_long, rest_eight,
-                G4_long, Gb4_long, A4_long,  G4_long, 
-                D4_long, A4_long, B4_long, C5_long, 
-                B4_long, A4_long, G4_long, rest,
-                G4_long, Gb4_long, A4_long, G4_long, 
-                D4_long, A4_long, B4_long, C5_long, 
-                B4_long, A4_long, B4_long, G4_long, rest_eight,
-                G4_long, Gb4_long, A4_long,  G4_long, 
-                D4_long, A4_long, B4_long, C5_long, 
-                B4_long, A4_long, G4_long, rest_eight]
+for i in range(0, len(part1_message)):
+   
+   bit = int(part1_message[i])
+   
+   if bit == 1:
+       bt = bt
+   else:
+       bt = bt/2 
+
+
+
+part1_filler= [G3, Gb3_eight, A3_sixth, G3, #Ba-yang Ma-gi-
+                   D3, A3_eight, B3_eight, C4_eight,  #-liw per-las ng
+                   B3_eight, A3_sixth, B3, G3_eight, rest_eight, #si-la-nga-nan
+                   G3, Gb3_eight, A3_sixth,  G3,  #a-lab-ng-pu-
+                   D3,A3_eight, B3_eight, C4_eight, #-so-sa-dib-dib-
+                   B3_eight, A3_sixth, G3, rest,
+                   G3, Gb3_eight, A3_sixth, G3, #Ba-yang Ma-gi-
+                   D3, A3_eight, B3_eight, C4_eight,  #-liw per-las ng
+                   B3_eight, A3_sixth, B3, G3_eight, rest_eight, #si-la-nga-nan
+                   G3, Gb3_eight, A3_sixth,  G3,  #a-lab-ng-pu-
+                   D3,A3_eight, B3_eight, C4_eight, #-so-sa-dib-dib-
+                   B3_eight, A3_sixth, G3, rest_eight] #-mo'y bu -hay
 
 
 part2 = [G4_eight, Gb4_sixth, G4_eight, A4_eight, 
@@ -71,10 +83,6 @@ def createSpace(track, attack=100, release=100):
             track[i] = track[i].fade_out(duration=release)
             track[i + 1] = track[i + 1].fade_in(duration=attack)
 
-# Combines two audio tracks
-note1 = []
-note2 = []
-
 #creates function to mix two tracks
 def mix2tracks(track1, track2):
     createSpace(track1, attack=50, release=50)
@@ -87,7 +95,7 @@ def mix2tracks(track1, track2):
     return song
 #mixing two tracks
 
-part1 = mix2tracks(track1=part1, track2=part1_filler)
+part1 = mix2tracks(track1=part1, track2=part1)
 part2 = mix2tracks(track1=part2, track2=part2_filler)
 part3 = mix2tracks(track1=part3, track2=part3_filler)
 part4 = mix2tracks(track1=part4, track2=part4_filler)
